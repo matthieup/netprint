@@ -94,7 +94,7 @@ func main() {
 func setpin(pin string) chromedp.Tasks {
 	return chromedp.Tasks{
 		chromedp.Click(`label[for="pin-num-set-fl-0"]`),
-		chromedp.SendKeys(`input[name="pin-no"]`, "1222", chromedp.NodeVisible),
+		chromedp.SendKeys(`input[name="pin-no"]`, pin, chromedp.NodeVisible),
 	}
 }
 
